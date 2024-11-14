@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; URL='https://linktr.ee/loveopenly'" />
-    <title>404 - redirect</title>
+    <title>Redirect Page</title>
+    <script>
+        // Get the referrer URL
+        const referrer = document.referrer;
+
+        // Check for specific URLs and redirect accordingly
+        if (referrer === "https://loveopenly.net/call") {
+            window.location.href = "https://calendly.com/loveopenlycoaching";
+        } else if (referrer === "https://loveopenly.net/yt") {
+            window.location.href = "https://www.youtube.com/@loveopenlynet?sub_contamination=1";
+        } else {
+            // Default redirect
+            window.location.href = "https://linktr.ee/loveopenly";
+        }
+    </script>
 </head>
-<body></body>
+<body>
+    </body>
 </html>
